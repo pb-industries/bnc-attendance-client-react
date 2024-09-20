@@ -1,8 +1,8 @@
 {
-  "name": "bnc-attendance-client-react",
-  "productName": "BNC Attendance",
-  "version": "0.58.1",
-  "description": "Attendance client for the BNC EverQuest guild",
+  "name": "mango-attendance-client-react",
+  "productName": "Mango Attendance",
+  "version": "1.0.0",
+  "description": "Attendance client for the Mango Surprise EverQuest guild",
   "main": "./dist/main/main.js",
   "author": {
     "name": "Alex Sims",

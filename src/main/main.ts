@@ -43,14 +43,14 @@ let appIcon: Tray | null = null;
 function buildContextMenu() {
   return Menu.buildFromTemplate([
     {
-      label: 'BNC Attendance',
-      click: function () {
+      label: 'Mango Attendance',
+      click: function() {
         mainWindow?.show();
       },
     },
     {
       label: overlayHidden ? 'Show loot tool' : 'Hide loot tool',
-      click: function () {
+      click: function() {
         toggleOverlay();
       },
     },
@@ -62,7 +62,7 @@ function buildContextMenu() {
     // },
     {
       label: 'Quit',
-      click: function () {
+      click: function() {
         // @ts-ignore
         app.isQuiting = true;
         app.quit();
@@ -183,7 +183,7 @@ const installExtensions = async () => {
   return installer
     .default(
       extensions.map((name) => installer[name]),
-      forceDownload
+      forceDownload,
     )
     .catch(console.log);
 };
@@ -284,7 +284,7 @@ const createWindow = async () => {
   });
 
   appIcon = new Tray(getAssetPath('icon.png'));
-  appIcon.setToolTip('BNC Attendance');
+  appIcon.setToolTip('Mango Attendance');
   appIcon.setContextMenu(buildContextMenu());
   appIcon.addListener('click', () => {
     mainWindow?.show();
@@ -303,7 +303,7 @@ const createWindow = async () => {
       // } else {
       //   callback(-2);
       // }
-    }
+    },
   );
 
   // Remove this if your app does not use auto updates
@@ -336,7 +336,7 @@ if (!gotTheLock) {
         if (mainWindow.isMinimized()) mainWindow.restore();
         mainWindow.focus();
       }
-    }
+    },
   );
 
   app
