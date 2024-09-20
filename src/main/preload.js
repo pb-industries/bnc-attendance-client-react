@@ -78,9 +78,9 @@ contextBridge.exposeInMainWorld('ipc', {
       callback(line);
     });
   },
-  baseUrl: 'https://bnc-attendance.fly.dev',
+  baseUrl: 'https://mango-attendance.fly.dev',
   recordLoot: async (messages) => {
-    await produce('loot', messages);
+    await produce('loot-mango', messages);
     return messages.length;
   },
 });

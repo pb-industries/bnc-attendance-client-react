@@ -2,7 +2,7 @@
 const { Kafka } = require('kafkajs');
 
 // the client ID lets kafka know who's producing the messages
-const clientId = 'loot-parser';
+const clientId = 'loot-parser-mango';
 // we can define the list of brokers in the cluster
 const brokers = ['healthy-stallion-9149-eu1-kafka.upstash.io:9092'];
 

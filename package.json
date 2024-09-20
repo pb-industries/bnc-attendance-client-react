@@ -1,6 +1,6 @@
 {
-  "name": "bnc-attendance-client",
-  "productName": "BNC Attendance",
+  "name": "mango-attendance-client",
+  "productName": "Mango Attendance",
   "description": "Attendance client to allow the creation of raids, tracking of raid attendance and ",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
@@ -31,8 +31,8 @@
     ]
   },
   "build": {
-    "productName": "BNC Attendance Client",
-    "appId": "org.erb.BncAttendance",
+    "productName": "Mango Attendance Client",
+    "appId": "org.erb.MangoAttendance",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -90,14 +90,14 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "alexmk92",
+      "owner": "pb-industries",
       "repo": "bnc-attendance-client-react",
       "token": "github_pat_11AA3PVKA0w3bgFMnR6oNp_4Pl9U9JQSM5DzLcCKSG8c1MKhFufFUd4jjlxIu4UngdY2WG43GOJxzy750"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexmk92/bnc-attendance-client-react.git"
+    "url": "git+https://github.com/pb-industries/bnc-attendance-client-react.git"
   },
   "author": {
     "name": "Electron React Boilerplate Maintainers",
@@ -118,7 +118,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexmk92/bnc-attendance-client-react/issues"
+    "url": "https://github.com/pb-industries/bnc-attendance-client-react/issues"
   },
   "keywords": [
     "electron",
@@ -131,7 +131,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/alexmk92/bnc-attendance-client-react#readme",
+  "homepage": "https://github.com/pb-industries/bnc-attendance-client-react#readme",
   "jest": {
     "testURL": "http://localhost/",
     "testEnvironment": "jsdom",
